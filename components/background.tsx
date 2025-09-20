@@ -33,12 +33,12 @@ const VideoWithPlaceholder = ({
 
   useEffect(() => {
     const video = videoRef.current;
-    
+
     if (video) {
       const handleLoadedData = () => {
         setVideoLoaded(true);
       };
-      
+
       const handleCanPlay = () => {
         setVideoLoaded(true);
       };
@@ -46,11 +46,11 @@ const VideoWithPlaceholder = ({
       video.addEventListener("loadeddata", handleLoadedData);
       video.addEventListener("canplay", handleCanPlay);
       video.load();
-      
+
       if (video.readyState >= 2) {
         setVideoLoaded(true);
       }
-      
+
       return () => {
         video.removeEventListener("loadeddata", handleLoadedData);
         video.removeEventListener("canplay", handleCanPlay);
@@ -103,7 +103,7 @@ export const Background = ({
   const isVideoFile = isVideo(extension);
 
   const classNames =
-    "absolute bg-background left-0 top-0 w-full h-full object-cover rounded-[42px] md:rounded-[72px]";
+    "absolute bg-background left-0 top-0 w-full h-full object-cover";
 
   if (isVideoFile) {
     return (
