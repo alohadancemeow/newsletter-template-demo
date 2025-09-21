@@ -1,4 +1,4 @@
-import { GitHubLogoIcon, InstagramLogoIcon } from "@radix-ui/react-icons";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import { buttonVariants } from "./ui/button";
 import { socialLinks } from "@/lib/constants";
 import XLogoIcon from "./icons/x";

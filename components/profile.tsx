@@ -52,7 +52,7 @@ export const Profile = () => {
       >
         <div className="relative mx-auto rounded-full overflow-hidden size-[160px] sm:size-[200px] lg:size-[230px]">
           <Image
-            src={"/profile2.jpg"}
+            src={"/profile.jpg"}
             loading="eager"
             priority
             fill
@@ -188,7 +188,7 @@ export const Profile = () => {
               }}
               className="relative font-semibold flex min-h-0 flex-shrink overflow-hidden text-md md:text-lg max-h-[calc(70dvh-var(--footer-safe-area))] flex-col gap-8 text-center backdrop-blur-xl text-balance border-2 border-border/50 bg-primary/20 max-w-3xl text-foreground rounded-3xl ring-1 ring-offset-primary/10 ring-border/10 ring-offset-2 shadow-button"
             >
-              <article className="relative overflow-y-auto italic p-6 h-full [&_p]:my-4">
+              <article className="relative overflow-y-auto pretty-scrollbar italic p-6 h-full [&_p]:my-4">
                 <p>
                   &quot;Feel pain. Contemplate pain. Accept pain. Know
                   pain.&quot;
